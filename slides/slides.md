@@ -124,8 +124,11 @@ Or:
 > **Git helps you make changes visible, trackable and reversible.**
 
 ---
-> Add screenshot for git history
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
 
+![bg cover](screenshot_git_history.png)
 
 ---
 # Workshop goals
