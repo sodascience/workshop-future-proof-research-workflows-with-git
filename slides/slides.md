@@ -181,6 +181,13 @@ By the end, you can:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
+![bg contain](screenshot_github.png)
+
+---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 ![bg contain](screenshot_github_desktop.png)
 
 ---
