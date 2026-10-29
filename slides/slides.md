@@ -181,7 +181,7 @@ By the end, you can:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg center](screenshot_github_desktop.png)
+![bg contain](screenshot_github_desktop.png)
 
 ---
 # The mental model: two copies, one history
