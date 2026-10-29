@@ -214,9 +214,17 @@ By the end, you can:
 **Goal:** You own a private repository on GitHub.
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of GitHub repository creation page
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of GitHub repository page with README.md open
 
 ---
@@ -261,9 +269,17 @@ Dot-prefixed names may be hidden in your file manager.
 **Check:** Can you find `README.md` on your computer?
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of GitHub Desktop clone dialog
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of local folder with README.md
 
 ---
@@ -288,12 +304,24 @@ Dot-prefixed names may be hidden in your file manager.
 **3. Push** in GitHub Desktop → available on GitHub
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of changing README.md in a text editor
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of GitHub Desktop showing the changed file in **Changes** view
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of GitHub Desktop showing the commit dialog with a message
 
 
@@ -312,6 +340,10 @@ Dot-prefixed names may be hidden in your file manager.
 > Weak commit message: "updates"
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of GitHub Desktop commit history
 
 
@@ -346,10 +378,18 @@ OpenAlex-derived teaching data for exploring research publications.
 > Save the zip file to `/data`
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of the created data folder in the cloned repository
 Ask why the data folder is empty in GitHub Desktop
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of the zip file in the data folder in GitHub Desktop
 Ask why the content of the zip file is not visible in GitHub Desktop
 
@@ -388,6 +428,10 @@ Put these lines in `.gitignore`:
 ```
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of the .gitignore file in GitHub Desktop
 
 ---
@@ -399,6 +443,10 @@ Put these lines in `.gitignore`:
 3. Confirm the new README text is there.
 4. Confirm the new commit appears in **History**.
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of the commit history on GitHub.com
 ---
 <!-- _class: exercise -->
@@ -424,9 +472,17 @@ Put these lines in `.gitignore`:
      - Use **History → Revert Changes in Commit** to make a new commit that reverses it.
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of the revert dialog in GitHub Desktop
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of the commit history showing the revert commit
 
 ---
@@ -459,6 +515,10 @@ Put these lines in `.gitignore`:
 **Next:** Collaboration workflows with branches, issues, and pull requests.
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of the main branch in GitHub Desktop
 
 ---
@@ -479,6 +539,10 @@ new branch:      C ── D ──┘
 **Branch ≠ separate repository.**
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of multiple branches in a project
 
 ---
@@ -493,6 +557,10 @@ new branch:      C ── D ──┘
 **Switching branches** changes which version of your project you are working on.
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of the branch selection menu in GitHub Desktop
 
 
@@ -541,6 +609,10 @@ new branch:      C ── D ──┘
 **Typical sequence:** Issue → branch → commits → PR → review → merge.
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of an issue and a pull request in GitHub
 
 ---
@@ -724,6 +796,10 @@ You now know the essentials of this workflow.
 
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of AI proposed changes
 
 ---
@@ -776,9 +852,17 @@ Can be especially useful for:
 - **Overleaf + Git integration**
 
 ---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of Overleaf Git integration
 
 --- 
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
 > Add screenshot of VS Code Git integration with AI-assisted writing
 
 
