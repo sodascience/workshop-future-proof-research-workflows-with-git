@@ -61,6 +61,15 @@ style: |
   section.cover h2 { font-size: 34px; font-weight: 600; margin: 0; }
   section.cover .cover-details { margin-top: 68px; font-size: 23px; line-height: 1.5; color: #808080; }
 
+  section.mission { text-align: center; }
+  section.mission h1 { color: #404040; font-size: 48px; line-height: 1.18; }
+  section.mission p { color: #808080; font-size: 29px; max-width: 1000px; margin: 24px auto 0; }
+  section.team .team-layout { display: grid; grid-template-columns: 1.15fr 1fr; gap: 42px; align-items: center; }
+  section.team .team-copy { font-size: 23px; line-height: 1.25; }
+  section.team .team-copy h2 { color: #404040; font-size: 26px; margin: 15px 0 5px; }
+  section.team .team-copy p { margin: 0; }
+  section.team .team-photo { width: 100%; height: auto; }
+
 ---
 <!-- _class: title cover -->
 <div class="cover-brand"><img class="cover-logo" src="img/soda.png" alt="SoDa logo"></div>
@@ -74,6 +83,30 @@ ODISSEI Early Career Day<br>
 </div>
 
 
+
+---
+<!-- _class: mission -->
+# We help social scientists with data-intensive & computational research
+
+Our goal is to enhance the evidence base and impact of social science by bringing the added value of new data sources and new data analysis techniques into social research in the Netherlands.
+
+---
+<!-- _class: team -->
+# Who we are
+
+<div class="team-layout">
+<div class="team-copy">
+<h2>Core team</h2>
+<p>Computer and data scientists at postdoc or assistant professor level, with a social sciences background.</p>
+<h2>Fellows</h2>
+<p>Early career social scientists working on projects aligned with ODISSEI and SoDa’s mission.</p>
+<h2>Student and research assistants</h2>
+<p>Support SoDa projects and activities.</p>
+<h2>Associate members</h2>
+<p>Liaisons, including research software engineers from eScience, SCP etc.</p>
+</div>
+<img class="team-photo" src="img/soda-team.jpg" alt="SoDa team group photograph">
+</div>
 
 ---
 # Workshop goals
