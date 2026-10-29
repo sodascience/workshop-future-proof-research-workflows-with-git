@@ -225,6 +225,24 @@ A **repository** contains:
 - One or more **branches**: different lines of development.
 
 
+---
+# Typical folder structure for a research project
+
+```text
+├── .git/            # Local Git history and settings (Git manages this)
+├── .github/         # Optional GitHub configurations
+├── data/
+│   ├── raw/         # Original data (read-only)
+│   └── processed/   # Data produced by scripts
+├── notebooks/       # Jupyter, R Markdown or Quarto notebooks
+├── src/             # Source code and scripts
+├── .gitignore       # Rules for excluding untracked files
+├── LICENSE.txt      # Project license
+└── README.md        # Project overview and documentation
+```
+
+Dot-prefixed names may be hidden in your file manager. 
+
 
 ---
 <!-- _class: exercise -->
