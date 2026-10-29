@@ -128,7 +128,7 @@ Or:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg cover](screenshot_git_history.png)
+![bg contain](screenshot_git_history.png)
 
 ---
 # Workshop goals
@@ -177,7 +177,11 @@ By the end, you can:
 **Git ≠ GitHub.** Git also works without GitHub.
 
 ---
-> Add screenshots for GitHub Desktop and GitHub.com to show difference
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg center](screenshot_github_desktop.png)
 
 ---
 # The mental model: two copies, one history
