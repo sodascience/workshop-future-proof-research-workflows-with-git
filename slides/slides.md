@@ -61,6 +61,8 @@ style: |
   section.cover h2 { font-size: 34px; font-weight: 600; margin: 0; }
   section.cover .cover-details { margin-top: 68px; font-size: 23px; line-height: 1.5; color: #808080; }
 
+  section .qr-center { display: flex; justify-content: center; width: 100%; }
+  section .qr-center img { width: 300px; height: auto; }
   section.mission { text-align: center; }
   section.mission h1 { color: #404040; font-size: 48px; line-height: 1.18; }
   section.mission p { color: #808080; font-size: 29px; max-width: 1000px; margin: 24px auto 0; }
@@ -149,8 +151,11 @@ Or:
 > **Git helps you make changes visible, trackable and reversible.**
 
 ---
-> Add screenshot for git history
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
 
+![bg contain](screenshot_git_history.png)
 
 ---
 # Workshop goals
@@ -190,7 +195,6 @@ By the end, you can:
 ---
 <!-- _class: foundation -->
 # Three different tools
-
 <div class="foundation-core">
 <h2>Git</h2>
 <p class="foundation-subtitle">The foundation: version control</p>
@@ -217,10 +221,20 @@ By the end, you can:
 </div>
 <div class="foundation-others">Other clients work the same way, e.g. GitLab, VS Code, RStudio, Overleaf</div>
 
-<!-- <div class="foundation-summary">Different tools, shared Git concepts and behavior</div> -->
 
 ---
-> Add screenshots for GitHub Desktop and GitHub.com to show difference
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github.png)
+
+---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github_desktop.png)
 
 ---
 <!-- _class: change-steps -->
@@ -257,10 +271,18 @@ By the end, you can:
 **Goal:** You own a private repository on GitHub.
 
 ---
-> Add screenshot of GitHub repository creation page
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github_new_repo.png)
 
 ---
-> Add screenshot of GitHub repository page with README.md open
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github_readme.png)
 
 ---
 # A repository is more than a folder
@@ -271,6 +293,24 @@ A **repository** contains:
 - A **history of commits**: what changed, when, and by whom.
 - One or more **branches**: different lines of development.
 
+
+---
+# Typical folder structure for a research project
+
+```text
+├── .git/            # Local Git history and settings (Git manages this)
+├── .github/         # Optional GitHub configurations
+├── data/
+│   ├── raw/         # Original data (read-only)
+│   └── processed/   # Data produced by scripts
+├── notebooks/       # Jupyter, R Markdown or Quarto notebooks
+├── src/             # Source code and scripts
+├── .gitignore       # Rules for excluding untracked files
+├── LICENSE.txt      # Project license
+└── README.md        # Project overview and documentation
+```
+
+Dot-prefixed names may be hidden in your file manager. 
 
 
 ---
@@ -286,10 +326,18 @@ A **repository** contains:
 **Check:** Can you find `README.md` on your computer?
 
 ---
-> Add screenshot of GitHub Desktop clone dialog
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github_desktop_clone.png)
 
 ---
-> Add screenshot of local folder with README.md
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_local_folder_readme.png)
 
 ---
 <!-- _class: checkpoint -->
@@ -313,15 +361,6 @@ A **repository** contains:
 
 **3. Push** in GitHub Desktop → available on GitHub
 
----
-> Add screenshot of changing README.md in a text editor
-
----
-> Add screenshot of GitHub Desktop showing the changed file in **Changes** view
-
----
-> Add screenshot of GitHub Desktop showing the commit dialog with a message
-
 
 
 ---
@@ -333,51 +372,64 @@ A **repository** contains:
 - **Red / −:** removed lines.
 - File names: which files changed.
 
+<br>
 
 > Good commit message: "Document missing-data handling"
 > Weak commit message: "updates"
 
 ---
-> Add screenshot of GitHub Desktop commit history
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
 
-
+![bg contain](screenshot_github_desktop_readme_changes.png)
 
 ---
-# Workshop research example
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
 
-> What factors influence the number of citations a research publication receives?
-
-**SORTD = SoDa Open Research Teaching Datasets**
-
-OpenAlex-derived teaching data for exploring research publications.
-
-> Add a QR-code to the dataset page
+![bg contain](screenshot_github_desktop_readme_history.png)
 
 ---
 <!-- _class: exercise -->
-# Exercise 3 · Make your first commit (10 min)
+# Exercise 3a · Make your first commits (10 min)
 
 1. Open `README.md` in a **plain-text editor**.
-2. Add `## Research question` and one question about SORTD.
-3. Record the SORTD source link and dataset version in `docs/methods.md`; save.
+2. Add `## Research question` and one research question based on SORTD.
+> What factors influence the number of citations a research publication receives?
+3. Create a new file `docs/methods.md`; save.
 4. Return to GitHub Desktop → **Changes**.
-5. Select README and methods; inspect the diff and describe the change.
+5. Select README; inspect the diff and describe the change.
 6. Click **Commit to main**.
+7. Select methods.md; inspect the diff and describe the change.
+8. Click **Commit to main**.
 
-**Goal:** One new commit in your local history.
-
----
-# Working with data files
-> Create a data folder in your cloned repository `/data`
-> Save the zip file to `/data`
+**Goal:** Two new commits in your local history.
 
 ---
-> Add screenshot of the created data folder in the cloned repository
-Ask why the data folder is empty in GitHub Desktop
+![bg contain](screenshot_github_desktop_first_commits.png)
 
 ---
-> Add screenshot of the zip file in the data folder in GitHub Desktop
-Ask why the content of the zip file is not visible in GitHub Desktop
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+# Exercise 3b · Working with data files
+
+**SORTD = SoDa Open Research Teaching Datasets**: OpenAlex-derived teaching data for exploring research publications.
+
+<div class="qr-center"><img src="qrcode_sortd_dataset.png" alt="QR code for the SORTD teaching dataset"></div>
+
+1. Create a data folder in your cloned repository `/data`
+2. Download the zip file `soda-openalex-teaching-1.0.0.zip` to `/data`
+
+---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github_desktop_data_folder.png)
 
 
 ---
@@ -392,15 +444,35 @@ Ask why the content of the zip file is not visible in GitHub Desktop
 Git can store both. **Readable diffs make collaboration easier.**
 
 ---
-> Do we want to commit the zip file? Why or why not?
+# Do we want to commit the zip file? Why (not)?
+
+
+---
+# What should be committed?
+
+**Usually yes**
+
+- Analysis scripts and notebooks (when appropriate)
+- README and methods documentation
+- Small configuration files and environment definitions
+
+**Usually no**
+
+- Confidential or personal research data
+- API keys, passwords, credentials
+- Large generated datasets or temporary output files
+
+> **Important:** Deleting something in a later commit does not reliably erase it from Git history.
+
 
 ---
 # .gitignore
-What is `.gitignore`?
+
+A text file that tells git which files/folders to ignore.
 
 ---
 <!-- _class: exercise -->
-# Exercise 5 · Thou shall not commit these files (6 min)
+# Exercise 5 · Thou shall not commit these files (5 min)
 
 In your cloned folder, create `.gitignore`.
 
@@ -414,7 +486,11 @@ Put these lines in `.gitignore`:
 ```
 
 ---
-> Add screenshot of the .gitignore file in GitHub Desktop
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg cover](screenshot_github_desktop_gitignore.png)
 
 ---
 <!-- _class: exercise -->
@@ -422,10 +498,24 @@ Put these lines in `.gitignore`:
 
 1. In GitHub Desktop, click **Push origin**.
 2. Open the repository on GitHub.com.
-3. Confirm the new README text is there.
-4. Confirm the new commit appears in **History**.
+3. Confirm the new README text and two new files are there.
+4. Confirm the new commit history also appears.
+
 ---
-> Add screenshot of the commit history on GitHub.com
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github_updated_repo.png)
+
+---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github_updated_history.png)
+
+
 ---
 <!-- _class: exercise -->
 # Exercise 7 · A remote edit and a pull (5 min)
@@ -438,7 +528,34 @@ Put these lines in `.gitignore`:
 
 **Check:** The browser commit now appears in Desktop's History.
 
+---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
 
+![bg contain](screenshot_github_readme_change.png)
+
+---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github_readme_change_commit.png)
+
+---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github_desktop_pull.png)
+
+
+---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github_desktop_fetch.png)
 
 ---
 # Undoing changes
@@ -448,12 +565,6 @@ Put these lines in `.gitignore`:
      - Discard selected changes only if you truly don't need them.
 - **Revert previously committed change:** 
      - Use **History → Revert Changes in Commit** to make a new commit that reverses it.
-
----
-> Add screenshot of the revert dialog in GitHub Desktop
-
----
-> Add screenshot of the commit history showing the revert commit
 
 ---
 
@@ -485,7 +596,11 @@ Put these lines in `.gitignore`:
 **Next:** Collaboration workflows with branches, issues, and pull requests.
 
 ---
-> Add screenshot of the main branch in GitHub Desktop
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github_desktop_fetch.png)
 
 ---
 # What is a branch?
@@ -505,7 +620,11 @@ new branch:      C ── D ──┘
 **Branch ≠ separate repository.**
 
 ---
-> Add screenshot of multiple branches in a project
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github_multiple_branches.png)
 
 ---
 # Branching in GitHub Desktop
@@ -519,21 +638,33 @@ new branch:      C ── D ──┘
 **Switching branches** changes which version of your project you are working on.
 
 ---
-> Add screenshot of the branch selection menu in GitHub Desktop
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
 
+
+![bg contain](screenshot_github_desktop_branch_menu.png)
 
 ---
 <!-- _class: exercise -->
 # Exercise 8 · Work on a branch (10 min)
 
-1. In GitHub Desktop, select `main`; **Fetch/Pull** if updates are offered.
+1. In GitHub Desktop, select `main`.
 2. Create `docs/reproducibility-note`.
 3. Open `docs/methods.md` and add one sentence about documentation.
+> The project uses linear regression.
 4. Review the diff and **commit**.
 5. Click **Publish branch**.
 6. On GitHub, verify both branches exist.
 
-**Quiz:** Does `main` contain your branch’s new sentence yet?
+<br>
+
+---
+<!-- _class: checkpoint -->
+
+# Quiz
+
+Does `main` contain your branch’s new sentence yet?
 
 
 
@@ -546,6 +677,8 @@ new branch:      C ── D ──┘
 - A branch lets you develop a proposed change independently.
 - The change is **not yet in `main`**.
 - The branch is now visible on GitHub because you **published** it.
+
+<br>
 
 **How does a colleague decide whether to incorporate it?**
 
@@ -567,9 +700,6 @@ new branch:      C ── D ──┘
 **Typical sequence:** Issue → branch → commits → PR → review → merge.
 
 ---
-> Add screenshot of an issue and a pull request in GitHub
-
----
 # Research collaboration scenario
 
 **Person A = repository owner**
@@ -589,6 +719,39 @@ new branch:      C ── D ──┘
 **Both:** Update the local `main` after the merge.
 
 
+---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github_create_issue.png)
+
+---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github_issue_overview.png)
+
+---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github_open_pr.png)
+
+---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](screenshot_github_pr_page.png)
+
+---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+![bg contain](screenshot_github_closed_issue.png)
 
 ---
 <!-- _class: exercise -->
@@ -597,7 +760,7 @@ new branch:      C ── D ──┘
 **Person A:**
 
 1. Open a GitHub issue:
-> “Add a sentence explaining how the analysis is documented.”
+> “Add a sentence explaining what statistical methods are used in the analysis.”
 2. On your repository: **Settings → Collaborators → Add people**.
 3. Invite Person B's GitHub username.
 
@@ -668,7 +831,11 @@ Instead, B:
 3. Received review.
 4. Had the change merged into `main`.
 
-**Quiz:** What can a pull request show that an emailed file cannot?
+---
+<!-- _class: checkpoint -->
+# Quiz
+
+What can a pull request show that an emailed file cannot?
 
 
 
@@ -682,7 +849,9 @@ A pull request connects the proposed **diff** with:
 - Comments and review decisions.
 - The commits and the eventual merge into `main`.
 
-**Both collaborators then pull the shared version.**
+<br>
+
+> **Both collaborators then pull the shared version.**
 
 
 
@@ -709,23 +878,6 @@ You now know the essentials of this workflow.
 
 
 
----
-# What belongs in a research Git repository?
-
-**Usually yes**
-
-- Analysis scripts and notebooks (when appropriate)
-- README and methods documentation
-- Small configuration files and environment definitions
-- Tests, codebooks, and **synthetic/example** data
-
-**Usually no**
-
-- Confidential or personal research data
-- API keys, passwords, credentials
-- Large generated datasets or temporary output files
-
-**Important:** Deleting a secret in a later commit does not reliably erase it from Git history.
 
 
 
@@ -739,7 +891,7 @@ You now know the essentials of this workflow.
 4. **Pull request**: propose and review a change.
 5. **History / Revert**: understand and recover prior work.
 
-**Git supports reproducibility; it does not guarantee it.**
+> **Git supports reproducibility; it does not guarantee it.**
 
 
 
@@ -752,7 +904,11 @@ You now know the essentials of this workflow.
 
 
 ---
-> Add screenshot of AI proposed changes
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg cover](screenshot_ai_integration_for_writing.png)
 
 ---
 <!-- _class: optional -->
@@ -760,13 +916,13 @@ You now know the essentials of this workflow.
 
 If an AI assistant makes any change to your file(s), you should:
 
+- **Make a plan**: what is the intended change?
 - **Branch first** so the proposal is isolated.
 - **Review the diff**: which files and lines changed?
 - **Test / inspect outputs** before accepting the result.
 - **Commit meaningful units** rather than a giant opaque change.
-- **Revert** if the modification introduces problems.
-
-Git records changes; **you** remain responsible for research validity.
+     
+> Git records changes; **you** remain responsible for research validity.
 
 
 
@@ -804,14 +960,11 @@ Can be especially useful for:
 - **Overleaf + Git integration**
 
 ---
-> Add screenshot of Overleaf Git integration
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
 
---- 
-> Add screenshot of VS Code Git integration with AI-assisted writing
-
-
-
-
+![bg cover](screenshot_overleaf_git_integration.png)
 
 ---
 <!-- _class: optional small -->
