@@ -109,6 +109,25 @@ Our goal is to enhance the evidence base and impact of social science by bringin
 </div>
 
 ---
+# Familiar research project problems
+
+`analysis_final.R` → `analysis_final_v2.R` → `analysis_final_REALLY_FINAL.R`
+
+Or:
+
+- Two collaborators edit the same file and exchange copies by email.
+- A result changes, but nobody remembers *which code changed*.
+- AI assistants produce changes, but you cannot see what changed (over time).
+
+<br>
+
+> **Git helps you make changes visible, trackable and reversible.**
+
+---
+> Add screenshot for git history
+
+
+---
 # Workshop goals
 
 By the end, you can:
@@ -139,23 +158,7 @@ By the end, you can:
 
 
 
----
-# Familiar research project problems
 
-`analysis_final.R` → `analysis_final_v2.R` → `analysis_final_REALLY_FINAL.R`
-
-Or:
-
-- An earlier working script disappears after a modification.
-- Two collaborators edit the same file and exchange copies by email.
-- A result changes, but nobody remembers *which code changed*.
-
-<br>
-
-> **Git helps you make changes visible and reversible.**
-
----
-> Add screenshot for git history
 
 
 
