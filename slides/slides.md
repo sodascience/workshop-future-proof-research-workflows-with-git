@@ -225,14 +225,14 @@ By the end, you can:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-> Add screenshot of GitHub repository creation page
+![bg contain](screenshot_github_new_repo.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-> Add screenshot of GitHub repository page with README.md open
+![bg contain](screenshot_github_readme.png)
 
 ---
 # A repository is more than a folder
