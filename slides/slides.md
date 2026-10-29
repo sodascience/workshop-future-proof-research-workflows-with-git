@@ -179,20 +179,19 @@ By the end, you can:
 ---
 # The mental model: two copies, one history
 
-**Local repository** = project on your computer  
-**Remote repository** = shared copy on GitHub
+
 
 ```text
-Your computer                       GitHub
+       Your computer                       GitHub
   [files + Git history]  --push-->  [files + Git history]
   [files + Git history]  <--pull--  [files + Git history]
 ```
+**Local repository** = project on your computer  
+**Remote repository** = shared copy on GitHub
 
-- **Commit:** save a meaningful snapshot to local Git history.
-- **Push:** publish local commits to GitHub.
-- **Pull:** bring remote commits into your local branch.
-
-
+<!-- - **Commit:** save a meaningful snapshot to local Git history. -->
+<!-- - **Push:** publish local commits to GitHub. -->
+<!-- - **Pull:** bring remote commits into your local branch. -->
 
 
 ---
