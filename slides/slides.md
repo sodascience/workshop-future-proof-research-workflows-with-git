@@ -70,7 +70,7 @@ style: |
 
 <div class="cover-details">
 ODISSEI Early Career Day<br>
-4 November 2026 · 13:45–16:00
+4 November 2026 · 13:30–15:45
 </div>
 
 
@@ -96,13 +96,13 @@ By the end, you can:
 
 | Time | Activity |
 |:--|:--|
-| 13:45–13:55 | Git, GitHub and research files |
-| 13:55–14:15 | Repository setup and cloning |
-| 14:15–14:40 | Changes, commits, history, push/pull |
-| 14:40–14:50 | Break |
-| 14:50–15:10 | Branches |
-| 15:10–15:45 | Issues, pull requests and peer review |
-| 15:45–16:00 | Git and AI-assisted research |
+| 13:30–13:40 | Git, GitHub and research files |
+| 13:40–14:00 | Repository setup and cloning |
+| 14:00–14:25 | Changes, commits, history, push/pull |
+| 14:25–14:35 | Break |
+| 14:35–14:55 | Branches |
+| 14:55–15:30 | Issues, pull requests and peer review |
+| 15:30–15:45 | Git and AI-assisted research |
 
 
 
@@ -394,7 +394,7 @@ Put these lines in `.gitignore`:
 
 ---
 <!-- _class: title -->
-# Break · 14:40–14:50
+# Break · 14:25–14:35
 
 **Next:** Collaboration workflows with branches, issues, and pull requests.
 
