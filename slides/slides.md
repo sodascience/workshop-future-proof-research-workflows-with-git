@@ -96,6 +96,11 @@ style: |
   section.change-steps .change-card h2 small { font-size: 22px; font-weight: 400; color: #808080; }
   section.change-steps .change-card p { margin: 4px 0 0; font-size: 21px; }
   section.change-steps .change-pull { margin-top: 14px; padding: 12px 18px; border: 2px dashed #006889; border-radius: 10px; text-align: center; font-size: 23px; }
+  section.workflow-full { padding: 26px 40px 34px; }
+  section.workflow-full h1 { margin: 0 0 4px; font-size: 1.2em; }
+  section.workflow-full p:has(> img:only-child) { margin: 0; text-align: center; }
+  section.workflow-full p:has(> img:only-child) img { width: 100%; max-height: 585px; object-fit: contain; }
+  section.workflow-full p:not(:has(img)) { margin: 6px 0 0; text-align: center; }
 
 ---
 <!-- _class: title cover -->
@@ -600,7 +605,9 @@ Put these lines in `.gitignore`:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop_fetch.png)
+<!-- ![bg contain](screenshot_github_desktop_fetch.png) -->
+![bg contain](git_toy_workflow_example.svg)
+
 
 ---
 # What is a branch?
@@ -618,6 +625,76 @@ new branch:      C ── D ──┘
 ```
 
 **Branch ≠ separate repository.**
+
+---
+<!-- _class: workflow-full -->
+<!-- _header: '' -->
+<!-- _footer: '' -->
+# One week workflow example
+
+![](git-toy-workflow-branches/day_1_Mon.png)
+
+Project set up: first commit with README and methods on main
+
+---
+<!-- _class: workflow-full -->
+<!-- _header: '' -->
+<!-- _footer: '' -->
+# One week workflow example
+
+![](git-toy-workflow-branches/day_2_Tue.png)
+
+Work splits into branches: exclusion rules and a data-cleaning script
+
+---
+<!-- _class: workflow-full -->
+<!-- _header: '' -->
+<!-- _footer: '' -->
+# One week workflow example
+
+![](git-toy-workflow-branches/day_3_Wed.png)
+
+Regression model fitted in R; the approach documented on its own branch
+
+---
+<!-- _class: workflow-full -->
+<!-- _header: '' -->
+<!-- _footer: '' -->
+# One week workflow example
+
+![](git-toy-workflow-branches/day_4_Thu.png)
+
+Session info recorded; exclusion rules reviewed and merged (PR #1)
+
+---
+<!-- _class: workflow-full -->
+<!-- _header: '' -->
+<!-- _footer: '' -->
+# One week workflow example
+
+![](git-toy-workflow-branches/day_5_Fri.png)
+
+Package versions pinned; R analysis reviewed and merged (PR #2)
+
+---
+<!-- _class: workflow-full -->
+<!-- _header: '' -->
+<!-- _footer: '' -->
+# One week workflow example
+
+![](git-toy-workflow-branches/day_6_Mon.png)
+
+After the weekend: reproducibility docs merged (PR #3)
+
+---
+<!-- _class: workflow-full -->
+<!-- _header: '' -->
+<!-- _footer: '' -->
+# One week workflow example
+
+![](git-toy-workflow-branches/day_7_Tue.png)
+
+Release branch tagged v1.0, with a CITATION.cff so others can cite it
 
 ---
 <!-- _header: '' -->
