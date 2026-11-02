@@ -605,9 +605,7 @@ Put these lines in `.gitignore`:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-<!-- ![bg contain](screenshot_github_desktop_fetch.png) -->
-![bg contain](git_toy_workflow_example.svg)
-
+![bg contain](screenshot_github_desktop_fetch.png)
 
 ---
 # What is a branch?
