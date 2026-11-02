@@ -71,6 +71,36 @@ style: |
   section.team .team-copy h2 { color: #404040; font-size: 26px; margin: 15px 0 5px; }
   section.team .team-copy p { margin: 0; }
   section.team .team-photo { width: 100%; height: auto; }
+  section.foundation .foundation-core { margin-top: 18px; padding: 18px 24px; border-radius: 12px; background: #e3eff3; text-align: center; }
+  section.foundation .foundation-core h2 { margin: 0; font-size: 34px; }
+  section.foundation .foundation-core p { margin: 4px 0 0; }
+  section.foundation .foundation-core .foundation-subtitle { color: #404040; font-size: 26px; }
+  section.foundation .foundation-details { font-size: 21px; color: #808080; }
+  section.foundation .foundation-link { margin: 10px 0; text-align: center; font-size: 21px; color: #808080; }
+  section.foundation .foundation-link span { display: block; font-size: 28px; line-height: 1; color: #006889; }
+  section.foundation .foundation-clients { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  section.foundation .foundation-client { display: grid; grid-template-columns: 64px 1fr; align-items: center; gap: 18px; padding: 14px 20px; border: 2px solid #d9e3e6; border-radius: 12px; }
+  section.foundation .foundation-client h2 { margin: 0; color: #404040; font-size: 28px; }
+  section.foundation .foundation-client p { margin: 4px 0 0; }
+  section.foundation .foundation-logo { width: 64px; height: 64px; }
+  section.foundation .foundation-others { margin-top: 10px; text-align: center; font-size: 21px; color: #808080; }
+  section.foundation .foundation-summary { margin-top: 20px; padding-top: 14px; border-top: 2px solid #d9e3e6; text-align: center; font-size: 25px; color: #404040; }
+  section.change-steps .change-zones { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; margin-top: 18px; }
+  section.change-steps .change-zone { padding: 14px 18px 18px; border-radius: 14px; background: #f2f5f6; }
+  section.change-steps .change-zone.remote { background: #e3eff3; }
+  section.change-steps .change-zone-title { margin-bottom: 10px; font-size: 20px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #808080; }
+  section.change-steps .change-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  section.change-steps .change-zone.remote .change-cards { grid-template-columns: 1fr; }
+  section.change-steps .change-card { padding: 14px 16px; border: 2px solid #d9e3e6; border-radius: 10px; background: #ffffff; }
+  section.change-steps .change-card h2 { margin: 0; font-size: 28px; }
+  section.change-steps .change-card h2 small { font-size: 22px; font-weight: 400; color: #808080; }
+  section.change-steps .change-card p { margin: 4px 0 0; font-size: 21px; }
+  section.change-steps .change-pull { margin-top: 14px; padding: 12px 18px; border: 2px dashed #006889; border-radius: 10px; text-align: center; font-size: 23px; }
+  section.workflow-full { padding: 26px 40px 34px; }
+  section.workflow-full h1 { margin: 0 0 4px; font-size: 1.2em; }
+  section.workflow-full p:has(> img:only-child) { margin: 0; text-align: center; }
+  section.workflow-full p:has(> img:only-child) img { width: 100%; max-height: 585px; object-fit: contain; }
+  section.workflow-full p:not(:has(img)) { margin: 6px 0 0; text-align: center; }
 
 ---
 <!-- _class: title cover -->
@@ -168,15 +198,34 @@ By the end, you can:
 
 
 ---
+<!-- _class: foundation -->
 # Three different tools
+<div class="foundation-core">
+<h2>Git</h2>
+<p class="foundation-subtitle">The foundation: version control</p>
+<p class="foundation-details">History · Commits · Branches · Merges</p>
+</div>
 
-| Tool | What it is | What we'll use it for |
-|:--|:--|:--|
-| **Git** | Version-control system | Track project history |
-| **GitHub** | Website for hosting Git repositories | Share, discuss, review changes |
-| **GitHub Desktop** | Visual Git application | Work locally without commands |
+<div class="foundation-link"><span>⇅</span>Use Git to work with repositories</div>
 
-**Git ≠ GitHub.** Git also works without GitHub.
+<div class="foundation-clients">
+<div class="foundation-client">
+<img class="foundation-logo" src="img/github-mark.svg" alt="GitHub logo">
+<div>
+<h2>GitHub.com</h2>
+<p class="foundation-details">Website: share · review · discuss</p>
+</div>
+</div>
+<div class="foundation-client">
+<img class="foundation-logo" src="img/github-desktop.png" alt="GitHub Desktop logo">
+<div>
+<h2>GitHub Desktop</h2>
+<p class="foundation-details">App on your laptop: commit · push · pull</p>
+</div>
+</div>
+</div>
+<div class="foundation-others">Other clients work the same way, e.g. GitLab, VS Code, RStudio, Overleaf</div>
+
 
 ---
 <!-- _header: '' -->
@@ -193,22 +242,26 @@ By the end, you can:
 ![bg contain](screenshot_github_desktop.png)
 
 ---
-# The mental model: two copies, one history
+<!-- _class: change-steps -->
+# A change in three steps
 
+<div class="change-zones">
+<div class="change-zone">
+<div class="change-zone-title">Your computer</div>
+<div class="change-cards">
+<div class="change-card"><h2><small>1</small> Edit</h2><p>Change and save a file</p></div>
+<div class="change-card"><h2><small>2</small> Commit</h2><p>Record a snapshot with a message</p></div>
+</div>
+</div>
+<div class="change-zone remote">
+<div class="change-zone-title">GitHub</div>
+<div class="change-cards">
+<div class="change-card"><h2><small>3</small> Push</h2><p>Share your commits</p></div>
+</div>
+</div>
+</div>
 
-
-```text
-       Your computer                       GitHub
-  [files + Git history]  --push-->  [files + Git history]
-  [files + Git history]  <--pull--  [files + Git history]
-```
-**Local repository** = project on your computer  
-**Remote repository** = shared copy on GitHub
-
-<!-- - **Commit:** save a meaningful snapshot to local Git history. -->
-<!-- - **Push:** publish local commits to GitHub. -->
-<!-- - **Pull:** bring remote commits into your local branch. -->
-
+<div class="change-pull"><strong>Pull</strong> works the other way: bring changes from GitHub to your computer</div>
 
 ---
 <!-- _class: exercise -->
@@ -297,7 +350,8 @@ Dot-prefixed names may be hidden in your file manager.
 
 **On GitHub.com:** your project exists online.
 
-**On your laptop:** the same files exist in a Git repository.
+<!-- Maybe mention that it's a normal folder but that has a .git hidden file? That's how github understands that it's a directory and not just a folder. -->
+**On your laptop:** the same files exist in a Git repository. 
 
 **In GitHub Desktop:** you can see your local repository.
 
@@ -571,6 +625,76 @@ new branch:      C ── D ──┘
 **Branch ≠ separate repository.**
 
 ---
+<!-- _class: workflow-full -->
+<!-- _header: '' -->
+<!-- _footer: '' -->
+# One week workflow example
+
+![](git-toy-workflow-branches/day_1_Mon.png)
+
+Project set up: first commit with README and methods on main
+
+---
+<!-- _class: workflow-full -->
+<!-- _header: '' -->
+<!-- _footer: '' -->
+# One week workflow example
+
+![](git-toy-workflow-branches/day_2_Tue.png)
+
+Work splits into branches: exclusion rules and a data-cleaning script
+
+---
+<!-- _class: workflow-full -->
+<!-- _header: '' -->
+<!-- _footer: '' -->
+# One week workflow example
+
+![](git-toy-workflow-branches/day_3_Wed.png)
+
+Regression model fitted in R; the approach documented on its own branch
+
+---
+<!-- _class: workflow-full -->
+<!-- _header: '' -->
+<!-- _footer: '' -->
+# One week workflow example
+
+![](git-toy-workflow-branches/day_4_Thu.png)
+
+Session info recorded; exclusion rules reviewed and merged (PR #1)
+
+---
+<!-- _class: workflow-full -->
+<!-- _header: '' -->
+<!-- _footer: '' -->
+# One week workflow example
+
+![](git-toy-workflow-branches/day_5_Fri.png)
+
+Package versions pinned; R analysis reviewed and merged (PR #2)
+
+---
+<!-- _class: workflow-full -->
+<!-- _header: '' -->
+<!-- _footer: '' -->
+# One week workflow example
+
+![](git-toy-workflow-branches/day_6_Mon.png)
+
+After the weekend: reproducibility docs merged (PR #3)
+
+---
+<!-- _class: workflow-full -->
+<!-- _header: '' -->
+<!-- _footer: '' -->
+# One week workflow example
+
+![](git-toy-workflow-branches/day_7_Tue.png)
+
+Release branch tagged v1.0, with a CITATION.cff so others can cite it
+
+---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
@@ -812,6 +936,8 @@ A pull request connects the proposed **diff** with:
 ```text
 PULL latest main
      ↓
+CREATE/CHOSE a issue that you plan to work on
+     ↓ 
 CREATE a branch for one coherent change
      ↓
 EDIT → REVIEW DIFF → COMMIT
