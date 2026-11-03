@@ -210,7 +210,7 @@ Or:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_git_history.png)
+![bg contain](img/screenshot_git_history.png)
 
 ---
 # Workshop goals
@@ -267,14 +267,14 @@ By the end, you can:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github.png)
+![bg contain](img/screenshot_github.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop.png)
+![bg contain](img/screenshot_github_desktop.png)
 
 ---
 <!-- _class: change-steps -->
@@ -315,14 +315,14 @@ By the end, you can:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_new_repo.png)
+![bg contain](img/screenshot_github_new_repo.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_readme.png)
+![bg contain](img/screenshot_github_readme.png)
 
 ---
 # A repository is more than a folder
@@ -370,14 +370,14 @@ Dot-prefixed names may be hidden in your file manager.
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop_clone.png)
+![bg contain](img/screenshot_github_desktop_clone.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_local_folder_readme.png)
+![bg contain](img/screenshot_local_folder_readme.png)
 
 ---
 <!-- _class: checkpoint -->
@@ -422,14 +422,14 @@ Dot-prefixed names may be hidden in your file manager.
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop_readme_changes.png)
+![bg contain](img/screenshot_github_desktop_readme_changes.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop_readme_history.png)
+![bg contain](img/screenshot_github_desktop_readme_history.png)
 
 ---
 <!-- _class: exercise -->
@@ -448,7 +448,7 @@ Dot-prefixed names may be hidden in your file manager.
 **Goal:** Two new commits in your local history.
 
 ---
-![bg contain](screenshot_github_desktop_first_commits.png)
+![bg contain](img/screenshot_github_desktop_first_commits.png)
 
 ---
 <!-- _header: '' -->
@@ -459,7 +459,7 @@ Dot-prefixed names may be hidden in your file manager.
 
 **SORTD = SoDa Open Research Teaching Datasets**: OpenAlex-derived teaching data for exploring research publications.
 
-<div class="qr-center"><img src="qrcode_sortd_dataset.png" alt="QR code for the SORTD teaching dataset"></div>
+<div class="qr-center"><img src="img/qrcode_sortd_dataset.png" alt="QR code for the SORTD teaching dataset"></div>
 
 1. Create a data folder in your cloned repository `/data`
 2. Download the zip file `soda-openalex-teaching-1.0.0.zip` to `/data`
@@ -469,7 +469,7 @@ Dot-prefixed names may be hidden in your file manager.
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop_data_folder.png)
+![bg contain](img/screenshot_github_desktop_data_folder.png)
 
 
 ---
@@ -530,7 +530,7 @@ Put these lines in `.gitignore`:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg cover](screenshot_github_desktop_gitignore.png)
+![bg cover](img/screenshot_github_desktop_gitignore.png)
 
 ---
 <!-- _class: exercise -->
@@ -546,14 +546,14 @@ Put these lines in `.gitignore`:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_updated_repo.png)
+![bg contain](img/screenshot_github_updated_repo.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_updated_history.png)
+![bg contain](img/screenshot_github_updated_history.png)
 
 
 ---
@@ -573,21 +573,21 @@ Put these lines in `.gitignore`:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_readme_change.png)
+![bg contain](img/screenshot_github_readme_change.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_readme_change_commit.png)
+![bg contain](img/screenshot_github_readme_change_commit.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop_pull.png)
+![bg contain](img/screenshot_github_desktop_pull.png)
 
 
 ---
@@ -595,7 +595,7 @@ Put these lines in `.gitignore`:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop_fetch.png)
+![bg contain](img/screenshot_github_desktop_fetch.png)
 
 ---
 # Undoing changes
@@ -640,7 +640,7 @@ Put these lines in `.gitignore`:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop_fetch.png)
+![bg contain](img/screenshot_github_desktop_fetch.png)
 
 ---
 # What is a branch?
@@ -734,7 +734,7 @@ Release branch tagged v1.0, with a CITATION.cff so others can cite it
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_multiple_branches.png)
+![bg contain](img/screenshot_github_multiple_branches.png)
 
 ---
 # Branching in GitHub Desktop
@@ -753,7 +753,7 @@ Release branch tagged v1.0, with a CITATION.cff so others can cite it
 <!-- _paginate: false -->
 
 
-![bg contain](screenshot_github_desktop_branch_menu.png)
+![bg contain](img/screenshot_github_desktop_branch_menu.png)
 
 ---
 <!-- _class: exercise -->
@@ -834,34 +834,34 @@ Does `main` contain your branch’s new sentence yet?
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_create_issue.png)
+![bg contain](img/screenshot_github_create_issue.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_issue_overview.png)
+![bg contain](img/screenshot_github_issue_overview.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_open_pr.png)
+![bg contain](img/screenshot_github_open_pr.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_pr_page.png)
+![bg contain](img/screenshot_github_pr_page.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
-![bg contain](screenshot_github_closed_issue.png)
+![bg contain](img/screenshot_github_closed_issue.png)
 
 ---
 <!-- _class: exercise -->
@@ -1018,7 +1018,7 @@ You now know the essentials of this workflow.
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg cover](screenshot_ai_integration_for_writing.png)
+![bg cover](img/screenshot_ai_integration_for_writing.png)
 
 ---
 <!-- _class: optional -->
@@ -1074,7 +1074,7 @@ Can be especially useful for:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg cover](screenshot_overleaf_git_integration.png)
+![bg cover](img/screenshot_overleaf_git_integration.png)
 
 ---
 <!-- _class: optional small -->
