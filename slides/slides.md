@@ -61,6 +61,16 @@ style: |
   section.cover h2 { font-size: 34px; font-weight: 600; margin: 0; }
   section.cover .cover-details { margin-top: 68px; font-size: 23px; line-height: 1.5; color: #808080; }
 
+  section.cover .cover-materials { position: absolute; right: 96px; bottom: 100px; width: 220px; text-align: center; }
+  section.cover .cover-materials p { margin: 0 0 10px; font-size: 23px; font-weight: 600; color: #006889; }
+  section.cover .cover-materials img { display: block; width: 220px; height: auto; }
+
+  section.fellowship .fellowship-layout { display: grid; grid-template-columns: 1fr 265px; gap: 36px; align-items: start; }
+  section.fellowship ul { font-size: 27px; line-height: 1.3; }
+  section.fellowship li { margin: 0.45em 0; }
+  section.fellowship .fellowship-deadline { margin-top: 20px; padding: 24px 18px; background: #006889; color: #ffffff; text-align: center; font-size: 27px; line-height: 1.3; }
+  section.fellowship .fellowship-deadline strong { color: #ffffff; font-size: 32px; }
+
   section .qr-center { display: flex; justify-content: center; width: 100%; }
   section .qr-center img { width: 300px; height: auto; }
   section.mission { text-align: center; }
@@ -114,6 +124,10 @@ ODISSEI Early Career Day<br>
 4 November 2026 · 13:30–15:45
 </div>
 
+<div class="cover-materials">
+<a href="https://edu.nl/qe4gw"><img src="img/slides-materials-qr.png" alt="QR code for slides and materials: edu.nl/qe4gw"></a>
+</div>
+
 
 
 ---
@@ -141,6 +155,42 @@ Our goal is to enhance the evidence base and impact of social science by bringin
 </div>
 
 ---
+<!-- _class: fellowship -->
+# Fellowship programme
+
+<div class="fellowship-layout">
+<div>
+
+- **2–3 fellows per year**
+- For PhD researchers, postdocs and assistant professors
+- Propose your own social science research project
+- **3–6 months full-time, with salary paid**
+- Join the **SoDa team** at Utrecht University’s Methodology & Statistics department
+- Receive mentoring from a senior team member
+
+</div>
+<div class="fellowship-deadline">
+Next application deadline:<br>
+<strong>7 December</strong>
+</div>
+</div>
+
+
+---
+# Agenda
+
+| Time | Activity |
+|:--|:--|
+| 13:30–13:40 | Git, GitHub and research files |
+| 13:40–14:00 | Repository setup and cloning |
+| 14:00–14:25 | Changes, commits, history, push/pull |
+| 14:25–14:35 | Break |
+| 14:35–14:55 | Branches |
+| 14:55–15:30 | Issues, pull requests and peer review |
+| 15:30–15:45 | Git and AI-assisted research |
+
+
+---
 # Familiar research project problems
 
 `analysis_final.R` → `analysis_final_v2.R` → `analysis_final_REALLY_FINAL.R`
@@ -160,7 +210,7 @@ Or:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_git_history.png)
+![bg contain](img/screenshot_git_history.png)
 
 ---
 # Workshop goals
@@ -175,21 +225,6 @@ By the end, you can:
 - **Understand** how to further integrate Git into your (AI-assisted) research workflow.
 
 > You do not need to write or run code to learn any of these.
-
-
-
----
-# Agenda
-
-| Time | Activity |
-|:--|:--|
-| 13:30–13:40 | Git, GitHub and research files |
-| 13:40–14:00 | Repository setup and cloning |
-| 14:00–14:25 | Changes, commits, history, push/pull |
-| 14:25–14:35 | Break |
-| 14:35–14:55 | Branches |
-| 14:55–15:30 | Issues, pull requests and peer review |
-| 15:30–15:45 | Git and AI-assisted research |
 
 
 
@@ -232,14 +267,14 @@ By the end, you can:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github.png)
+![bg contain](img/screenshot_github.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop.png)
+![bg contain](img/screenshot_github_desktop.png)
 
 ---
 <!-- _class: change-steps -->
@@ -265,7 +300,7 @@ By the end, you can:
 
 ---
 <!-- _class: exercise -->
-# Exercise 1 · Your private repository (8 min)
+# Exercise 1 · Your private repository (5 min)
 
 1. Sign in at **GitHub.com** and choose **New repository**.
 2. Name it `research-git-practice`.
@@ -280,14 +315,14 @@ By the end, you can:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_new_repo.png)
+![bg contain](img/screenshot_github_new_repo.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_readme.png)
+![bg contain](img/screenshot_github_readme.png)
 
 ---
 # A repository is more than a folder
@@ -320,7 +355,7 @@ Dot-prefixed names may be hidden in your file manager.
 
 ---
 <!-- _class: exercise -->
-# Exercise 2 · Clone it locally (6 min)
+# Exercise 2 · Clone it locally (5 min)
 
 1. On GitHub, open **your** new repository.
 2. Click **Code → Open with GitHub Desktop**.
@@ -335,14 +370,14 @@ Dot-prefixed names may be hidden in your file manager.
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop_clone.png)
+![bg contain](img/screenshot_github_desktop_clone.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_local_folder_readme.png)
+![bg contain](img/screenshot_local_folder_readme.png)
 
 ---
 <!-- _class: checkpoint -->
@@ -387,18 +422,18 @@ Dot-prefixed names may be hidden in your file manager.
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop_readme_changes.png)
+![bg contain](img/screenshot_github_desktop_readme_changes.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop_readme_history.png)
+![bg contain](img/screenshot_github_desktop_readme_history.png)
 
 ---
 <!-- _class: exercise -->
-# Exercise 3a · Make your first commits (10 min)
+# Exercise 3 · Make your first commits (10 min)
 
 1. Open `README.md` in a **plain-text editor**.
 2. Add `## Research question` and one research question based on SORTD.
@@ -413,18 +448,18 @@ Dot-prefixed names may be hidden in your file manager.
 **Goal:** Two new commits in your local history.
 
 ---
-![bg contain](screenshot_github_desktop_first_commits.png)
-
----
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-# Exercise 3b · Working with data files
+![bg contain](img/screenshot_github_desktop_first_commits.png)
+
+---
+# Working with data files
 
 **SORTD = SoDa Open Research Teaching Datasets**: OpenAlex-derived teaching data for exploring research publications.
 
-<div class="qr-center"><img src="qrcode_sortd_dataset.png" alt="QR code for the SORTD teaching dataset"></div>
+<div class="qr-center"><img src="img/qrcode_sortd_dataset.png" alt="QR code for the SORTD teaching dataset"></div>
 
 1. Create a data folder in your cloned repository `/data`
 2. Download the zip file `soda-openalex-teaching-1.0.0.zip` to `/data`
@@ -434,7 +469,7 @@ Dot-prefixed names may be hidden in your file manager.
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop_data_folder.png)
+![bg contain](img/screenshot_github_desktop_data_folder.png)
 
 
 ---
@@ -476,12 +511,11 @@ Git can store both. **Readable diffs make collaboration easier.**
 A text file that tells git which files/folders to ignore.
 
 ---
-<!-- _class: exercise -->
-# Exercise 5 · Thou shall not commit these files (5 min)
+# Thou shall not commit these files
 
-In your cloned folder, create `.gitignore`.
+1. In your cloned folder, create `.gitignore`.
 
-Put these lines in `.gitignore`:
+2. Put these lines in `.gitignore`:
 
 ```gitignore
 /data/
@@ -495,11 +529,11 @@ Put these lines in `.gitignore`:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg cover](screenshot_github_desktop_gitignore.png)
+![bg cover](img/screenshot_github_desktop_gitignore.png)
 
 ---
 <!-- _class: exercise -->
-# Exercise 6 · Publish (5 min)
+# Exercise 4 · Publish (5 min)
 
 1. In GitHub Desktop, click **Push origin**.
 2. Open the repository on GitHub.com.
@@ -511,19 +545,19 @@ Put these lines in `.gitignore`:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_updated_repo.png)
+![bg contain](img/screenshot_github_updated_repo.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_updated_history.png)
+![bg contain](img/screenshot_github_updated_history.png)
 
 
 ---
 <!-- _class: exercise -->
-# Exercise 7 · A remote edit and a pull (5 min)
+# Exercise 5 · A remote edit and a pull (5 min)
 
 1. On GitHub.com, open `README.md` and click the pencil.
 2. Add `Workshop practice: 4 November 2026`.
@@ -538,21 +572,21 @@ Put these lines in `.gitignore`:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_readme_change.png)
+![bg contain](img/screenshot_github_readme_change.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_readme_change_commit.png)
+![bg contain](img/screenshot_github_readme_change_commit.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop_pull.png)
+![bg contain](img/screenshot_github_desktop_pull.png)
 
 
 ---
@@ -560,7 +594,7 @@ Put these lines in `.gitignore`:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop_fetch.png)
+![bg contain](img/screenshot_github_desktop_fetch.png)
 
 ---
 # Undoing changes
@@ -605,7 +639,7 @@ Put these lines in `.gitignore`:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_desktop_fetch.png)
+![bg contain](img/screenshot_github_desktop_fetch.png)
 
 ---
 # What is a branch?
@@ -699,7 +733,7 @@ Release branch tagged v1.0, with a CITATION.cff so others can cite it
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_multiple_branches.png)
+![bg contain](img/screenshot_github_multiple_branches.png)
 
 ---
 # Branching in GitHub Desktop
@@ -718,16 +752,16 @@ Release branch tagged v1.0, with a CITATION.cff so others can cite it
 <!-- _paginate: false -->
 
 
-![bg contain](screenshot_github_desktop_branch_menu.png)
+![bg contain](img/screenshot_github_desktop_branch_menu.png)
 
 ---
 <!-- _class: exercise -->
-# Exercise 8 · Work on a branch (10 min)
+# Exercise 6 · Work on a branch (10 min)
 
 1. In GitHub Desktop, select `main`.
 2. Create `docs/reproducibility-note`.
 3. Open `docs/methods.md` and add one sentence about documentation.
-> The project uses linear regression.
+> The project uses the SoDa SORTD datasets.
 4. Review the diff and **commit**.
 5. Click **Publish branch**.
 6. On GitHub, verify both branches exist.
@@ -799,85 +833,80 @@ Does `main` contain your branch’s new sentence yet?
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_create_issue.png)
+![bg contain](img/screenshot_github_create_issue.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_issue_overview.png)
+![bg contain](img/screenshot_github_issue_overview.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_open_pr.png)
+![bg contain](img/screenshot_github_open_pr.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](screenshot_github_pr_page.png)
+![bg contain](img/screenshot_github_pr_page.png)
 
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
-![bg contain](screenshot_github_closed_issue.png)
+![bg contain](img/screenshot_github_closed_issue.png)
 
 ---
 <!-- _class: exercise -->
-# Exercise 9A · Share and plan (7 min)
+# Exercise 7A · Share and plan (5 min)
 
 **Person A:**
 
-1. Open a GitHub issue:
-> “Add a sentence explaining what statistical methods are used in the analysis.”
-2. On your repository: **Settings → Collaborators → Add people**.
-3. Invite Person B's GitHub username.
 
-**Person B:** Accept the invitation, then **clone A's repository**.
+1. On your repository: **Settings → Collaborators → Add people**.
+2. Invite Person B's GitHub username.
+
+**Person B:** 
+
+3. Accept the invitation, then **clone A's repository**.
+
+**Person A:**
+
+4. Open a GitHub issue:
+> “Add a sentence explaining what statistical methods are used in the analysis.”
+5. Assign the issue to Person B.
+
+
 
 
 
 ---
 <!-- _class: exercise -->
-# Exercise 9B · Propose a change (10 min)
+# Exercise 7B · Propose a change (10 min)
 
 **Person B:**
 
 1. On A's cloned repository, start from **main**.
-2. Create branch `docs/clarify-workflow`.
+2. Create branch `docs/clarify-methods`.
 3. Add a sentence to `docs/methods.md`.
+> "The project uses linear regression."
 4. Review the diff → **Commit** → **Publish branch**.
 5. Click **Preview/Create Pull Request** in Desktop.
-6. On GitHub, open a PR **into `main`**; mention the issue.
+6. On GitHub, open a PR **into `main`**; mention the issue ("Fix #1").
 
 **Do not merge your own PR yet.**
 
 
 
 ---
-# What should a reviewer check?
-
-Before merging research code or documentation:
-
-- **Purpose:** What is this change supposed to achieve?
-- **Scope:** Were only the intended files edited?
-- **Diff:** What lines were added or removed?
-- **Evidence:** If code changed, was it run or tested?
-- **Risks:** Any confidential data, passwords, or unintended outputs?
-
-> A green “Merge” button is not proof of correctness.
-
-
-
----
 <!-- _class: exercise -->
-# Exercise 9C · Review, merge, synchronize (8 min)
+# Exercise 7C · Review, merge, synchronize (5 min)
 
 **Person A:**
 
@@ -905,6 +934,22 @@ Instead, B:
 2. Made the diff visible in a pull request.
 3. Received review.
 4. Had the change merged into `main`.
+
+
+
+---
+# What should a reviewer check?
+
+Before merging research code or documentation:
+
+- **Purpose:** What is this change supposed to achieve?
+- **Scope:** Were only the intended files edited?
+- **Diff:** What lines were added or removed?
+- **Evidence:** If code changed, was it run or tested?
+- **Risks:** Any confidential data, passwords, or unintended outputs?
+
+> A green “Merge” button is not proof of correctness.
+
 
 ---
 <!-- _class: checkpoint -->
@@ -983,7 +1028,7 @@ You now know the essentials of this workflow.
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg cover](screenshot_ai_integration_for_writing.png)
+![bg cover](img/screenshot_ai_integration_for_writing.png)
 
 ---
 <!-- _class: optional -->
@@ -1039,7 +1084,7 @@ Can be especially useful for:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg cover](screenshot_overleaf_git_integration.png)
+![bg cover](img/screenshot_overleaf_git_integration.png)
 
 ---
 <!-- _class: optional small -->
