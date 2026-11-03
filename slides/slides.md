@@ -65,6 +65,12 @@ style: |
   section.cover .cover-materials p { margin: 0 0 10px; font-size: 23px; font-weight: 600; color: #006889; }
   section.cover .cover-materials img { display: block; width: 220px; height: auto; }
 
+  section.fellowship .fellowship-layout { display: grid; grid-template-columns: 1fr 265px; gap: 36px; align-items: start; }
+  section.fellowship ul { font-size: 27px; line-height: 1.3; }
+  section.fellowship li { margin: 0.45em 0; }
+  section.fellowship .fellowship-deadline { margin-top: 20px; padding: 24px 18px; background: #006889; color: #ffffff; text-align: center; font-size: 27px; line-height: 1.3; }
+  section.fellowship .fellowship-deadline strong { color: #ffffff; font-size: 32px; }
+
   section .qr-center { display: flex; justify-content: center; width: 100%; }
   section .qr-center img { width: 300px; height: auto; }
   section.mission { text-align: center; }
@@ -146,6 +152,27 @@ Our goal is to enhance the evidence base and impact of social science by bringin
 <p>Liaisons, including research software engineers from eScience, SCP etc.</p>
 </div>
 <img class="team-photo" src="img/soda-team.jpg" alt="SoDa team group photograph">
+</div>
+
+---
+<!-- _class: fellowship -->
+# Fellowship programme
+
+<div class="fellowship-layout">
+<div>
+
+- **2–3 fellows per year**
+- For PhD researchers, postdocs and assistant professors
+- Propose your own social science research project
+- **3–6 months full-time, with salary paid**
+- Join the **SoDa team** at Utrecht University’s Methodology & Statistics department
+- Receive mentoring from a senior team member
+
+</div>
+<div class="fellowship-deadline">
+Next application deadline:<br>
+<strong>7 December</strong>
+</div>
 </div>
 
 ---
