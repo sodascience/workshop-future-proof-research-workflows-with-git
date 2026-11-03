@@ -175,6 +175,21 @@ Next application deadline:<br>
 </div>
 </div>
 
+
+---
+# Agenda
+
+| Time | Activity |
+|:--|:--|
+| 13:30–13:40 | Git, GitHub and research files |
+| 13:40–14:00 | Repository setup and cloning |
+| 14:00–14:25 | Changes, commits, history, push/pull |
+| 14:25–14:35 | Break |
+| 14:35–14:55 | Branches |
+| 14:55–15:30 | Issues, pull requests and peer review |
+| 15:30–15:45 | Git and AI-assisted research |
+
+
 ---
 # Familiar research project problems
 
@@ -210,21 +225,6 @@ By the end, you can:
 - **Understand** how to further integrate Git into your (AI-assisted) research workflow.
 
 > You do not need to write or run code to learn any of these.
-
-
-
----
-# Agenda
-
-| Time | Activity |
-|:--|:--|
-| 13:30–13:40 | Git, GitHub and research files |
-| 13:40–14:00 | Repository setup and cloning |
-| 14:00–14:25 | Changes, commits, history, push/pull |
-| 14:25–14:35 | Break |
-| 14:35–14:55 | Branches |
-| 14:55–15:30 | Issues, pull requests and peer review |
-| 15:30–15:45 | Git and AI-assisted research |
 
 
 
