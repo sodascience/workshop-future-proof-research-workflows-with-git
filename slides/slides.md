@@ -61,6 +61,10 @@ style: |
   section.cover h2 { font-size: 34px; font-weight: 600; margin: 0; }
   section.cover .cover-details { margin-top: 68px; font-size: 23px; line-height: 1.5; color: #808080; }
 
+  section.cover .cover-materials { position: absolute; right: 96px; bottom: 100px; width: 220px; text-align: center; }
+  section.cover .cover-materials p { margin: 0 0 10px; font-size: 23px; font-weight: 600; color: #006889; }
+  section.cover .cover-materials img { display: block; width: 220px; height: auto; }
+
   section .qr-center { display: flex; justify-content: center; width: 100%; }
   section .qr-center img { width: 300px; height: auto; }
   section.mission { text-align: center; }
@@ -112,6 +116,10 @@ style: |
 <div class="cover-details">
 ODISSEI Early Career Day<br>
 4 November 2026 · 13:30–15:45
+</div>
+
+<div class="cover-materials">
+<a href="https://edu.nl/qe4gw"><img src="img/slides-materials-qr.png" alt="QR code for slides and materials: edu.nl/qe4gw"></a>
 </div>
 
 
