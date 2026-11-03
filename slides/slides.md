@@ -300,7 +300,7 @@ By the end, you can:
 
 ---
 <!-- _class: exercise -->
-# Exercise 1 · Your private repository (8 min)
+# Exercise 1 · Your private repository (5 min)
 
 1. Sign in at **GitHub.com** and choose **New repository**.
 2. Name it `research-git-practice`.
@@ -355,7 +355,7 @@ Dot-prefixed names may be hidden in your file manager.
 
 ---
 <!-- _class: exercise -->
-# Exercise 2 · Clone it locally (6 min)
+# Exercise 2 · Clone it locally (5 min)
 
 1. On GitHub, open **your** new repository.
 2. Click **Code → Open with GitHub Desktop**.
@@ -433,7 +433,7 @@ Dot-prefixed names may be hidden in your file manager.
 
 ---
 <!-- _class: exercise -->
-# Exercise 3a · Make your first commits (10 min)
+# Exercise 3 · Make your first commits (10 min)
 
 1. Open `README.md` in a **plain-text editor**.
 2. Add `## Research question` and one research question based on SORTD.
@@ -448,14 +448,14 @@ Dot-prefixed names may be hidden in your file manager.
 **Goal:** Two new commits in your local history.
 
 ---
-![bg contain](img/screenshot_github_desktop_first_commits.png)
-
----
 <!-- _header: '' -->
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-# Exercise 3b · Working with data files
+![bg contain](img/screenshot_github_desktop_first_commits.png)
+
+---
+# Working with data files
 
 **SORTD = SoDa Open Research Teaching Datasets**: OpenAlex-derived teaching data for exploring research publications.
 
@@ -511,12 +511,11 @@ Git can store both. **Readable diffs make collaboration easier.**
 A text file that tells git which files/folders to ignore.
 
 ---
-<!-- _class: exercise -->
-# Exercise 5 · Thou shall not commit these files (5 min)
+# Thou shall not commit these files
 
-In your cloned folder, create `.gitignore`.
+1. In your cloned folder, create `.gitignore`.
 
-Put these lines in `.gitignore`:
+2. Put these lines in `.gitignore`:
 
 ```gitignore
 /data/
@@ -534,7 +533,7 @@ Put these lines in `.gitignore`:
 
 ---
 <!-- _class: exercise -->
-# Exercise 6 · Publish (5 min)
+# Exercise 4 · Publish (5 min)
 
 1. In GitHub Desktop, click **Push origin**.
 2. Open the repository on GitHub.com.
@@ -558,7 +557,7 @@ Put these lines in `.gitignore`:
 
 ---
 <!-- _class: exercise -->
-# Exercise 7 · A remote edit and a pull (5 min)
+# Exercise 5 · A remote edit and a pull (5 min)
 
 1. On GitHub.com, open `README.md` and click the pencil.
 2. Add `Workshop practice: 4 November 2026`.
@@ -757,12 +756,12 @@ Release branch tagged v1.0, with a CITATION.cff so others can cite it
 
 ---
 <!-- _class: exercise -->
-# Exercise 8 · Work on a branch (10 min)
+# Exercise 6 · Work on a branch (10 min)
 
 1. In GitHub Desktop, select `main`.
 2. Create `docs/reproducibility-note`.
 3. Open `docs/methods.md` and add one sentence about documentation.
-> The project uses linear regression.
+> The project uses the SoDa SORTD datasets.
 4. Review the diff and **commit**.
 5. Click **Publish branch**.
 6. On GitHub, verify both branches exist.
@@ -865,54 +864,49 @@ Does `main` contain your branch’s new sentence yet?
 
 ---
 <!-- _class: exercise -->
-# Exercise 9A · Share and plan (7 min)
+# Exercise 7A · Share and plan (5 min)
 
 **Person A:**
 
-1. Open a GitHub issue:
-> “Add a sentence explaining what statistical methods are used in the analysis.”
-2. On your repository: **Settings → Collaborators → Add people**.
-3. Invite Person B's GitHub username.
 
-**Person B:** Accept the invitation, then **clone A's repository**.
+1. On your repository: **Settings → Collaborators → Add people**.
+2. Invite Person B's GitHub username.
+
+**Person B:** 
+
+3. Accept the invitation, then **clone A's repository**.
+
+**Person A:**
+
+4. Open a GitHub issue:
+> “Add a sentence explaining what statistical methods are used in the analysis.”
+5. Assign the issue to Person B.
+
+
 
 
 
 ---
 <!-- _class: exercise -->
-# Exercise 9B · Propose a change (10 min)
+# Exercise 7B · Propose a change (10 min)
 
 **Person B:**
 
 1. On A's cloned repository, start from **main**.
-2. Create branch `docs/clarify-workflow`.
+2. Create branch `docs/clarify-methods`.
 3. Add a sentence to `docs/methods.md`.
+> "The project uses linear regression."
 4. Review the diff → **Commit** → **Publish branch**.
 5. Click **Preview/Create Pull Request** in Desktop.
-6. On GitHub, open a PR **into `main`**; mention the issue.
+6. On GitHub, open a PR **into `main`**; mention the issue ("Fix #1").
 
 **Do not merge your own PR yet.**
 
 
 
 ---
-# What should a reviewer check?
-
-Before merging research code or documentation:
-
-- **Purpose:** What is this change supposed to achieve?
-- **Scope:** Were only the intended files edited?
-- **Diff:** What lines were added or removed?
-- **Evidence:** If code changed, was it run or tested?
-- **Risks:** Any confidential data, passwords, or unintended outputs?
-
-> A green “Merge” button is not proof of correctness.
-
-
-
----
 <!-- _class: exercise -->
-# Exercise 9C · Review, merge, synchronize (8 min)
+# Exercise 7C · Review, merge, synchronize (5 min)
 
 **Person A:**
 
@@ -940,6 +934,22 @@ Instead, B:
 2. Made the diff visible in a pull request.
 3. Received review.
 4. Had the change merged into `main`.
+
+
+
+---
+# What should a reviewer check?
+
+Before merging research code or documentation:
+
+- **Purpose:** What is this change supposed to achieve?
+- **Scope:** Were only the intended files edited?
+- **Diff:** What lines were added or removed?
+- **Evidence:** If code changed, was it run or tested?
+- **Risks:** Any confidential data, passwords, or unintended outputs?
+
+> A green “Merge” button is not proof of correctness.
+
 
 ---
 <!-- _class: checkpoint -->
