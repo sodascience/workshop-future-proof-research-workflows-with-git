@@ -299,7 +299,7 @@ You keep working in the same files. **Git records the versions you choose to sav
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](img/screenshot_git_history.png)
+![bg cover](img/screenshot_git_history.png)
 
 ---
 # Workshop goals
@@ -314,11 +314,6 @@ By the end, you can:
 - **Understand** how to further integrate Git into your (AI-assisted) research workflow.
 
 > You do not need to write or run code to learn any of these.
-
-
-
-
-
 
 
 ---
@@ -356,7 +351,7 @@ By the end, you can:
 <!-- _footer: '' -->
 <!-- _paginate: false -->
 
-![bg contain](img/screenshot_github.png)
+![bg cover](img/screenshot_github.png)
 
 ---
 <!-- _header: '' -->
