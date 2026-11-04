@@ -522,7 +522,7 @@ Dot-prefixed names may be hidden in your file manager.
 # Exercise 3 · Make your first commits (10 min)
 
 1. Open `README.md` in a **plain-text editor**.
-2. Add `## Research question` and one research question based on SORTD.
+2. Add `## Research question` and one research question like:
 > What factors influence the number of citations a research publication receives?
 3. Create a new file `docs/methods.md`; save.
 4. Return to GitHub Desktop → **Changes**.
