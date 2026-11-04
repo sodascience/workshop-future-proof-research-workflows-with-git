@@ -347,20 +347,6 @@ By the end, you can:
 
 
 ---
-<!-- _header: '' -->
-<!-- _footer: '' -->
-<!-- _paginate: false -->
-
-![bg cover](img/screenshot_github.png)
-
----
-<!-- _header: '' -->
-<!-- _footer: '' -->
-<!-- _paginate: false -->
-
-![bg contain](img/screenshot_github_desktop.png)
-
----
 <!-- _class: change-steps -->
 # A change in three steps
 
@@ -381,6 +367,22 @@ By the end, you can:
 </div>
 
 <div class="change-pull"><strong>Pull</strong> works the other way: bring changes from GitHub to your computer</div>
+
+---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg cover](img/screenshot_github.png)
+
+---
+<!-- _header: '' -->
+<!-- _footer: '' -->
+<!-- _paginate: false -->
+
+![bg contain](img/screenshot_github_desktop.png)
+
+
 
 ---
 <!-- _class: exercise -->
