@@ -120,6 +120,7 @@ style: |
 ## An introductory workshop
 
 <div class="cover-details">
+Taymara Abreu, Qixiang Fang, Max Maes, Vlad Mutruc<br>
 ODISSEI Early Career Day<br>
 4 November 2026 · 13:30–15:45
 </div>
