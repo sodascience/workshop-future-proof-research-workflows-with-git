@@ -644,7 +644,7 @@ A text file that tells git which files/folders to ignore.
 ---
 # What is a branch?
 
-A **branch** is a separate line of development in the *same* repository.
+A **branch** is a separate line of changes in the *same* repository.
 
 - `main` = the shared, stable line.
 - `docs/add-reproducibility-note` = work in progress.
@@ -666,7 +666,7 @@ new branch:      C ── D ──┘
 
 ![](git-toy-workflow-branches/day_1_Mon.png)
 
-Project set up: first commit with README and methods on main
+Project set up: first commit on main
 
 ---
 <!-- _class: workflow-full -->
@@ -676,7 +676,7 @@ Project set up: first commit with README and methods on main
 
 ![](git-toy-workflow-branches/day_2_Tue.png)
 
-Work splits into branches: exclusion rules and a data-cleaning script
+Work splits into three branches: methods, analysis and README
 
 ---
 <!-- _class: workflow-full -->
@@ -686,7 +686,7 @@ Work splits into branches: exclusion rules and a data-cleaning script
 
 ![](git-toy-workflow-branches/day_3_Wed.png)
 
-Regression model fitted in R; the approach documented on its own branch
+Methods edit reviewed and merged (PR #1); the other branches continue
 
 ---
 <!-- _class: workflow-full -->
@@ -696,7 +696,7 @@ Regression model fitted in R; the approach documented on its own branch
 
 ![](git-toy-workflow-branches/day_4_Thu.png)
 
-Session info recorded; exclusion rules reviewed and merged (PR #1)
+Analysis reviewed and merged (PR #2)
 
 ---
 <!-- _class: workflow-full -->
@@ -706,27 +706,7 @@ Session info recorded; exclusion rules reviewed and merged (PR #1)
 
 ![](git-toy-workflow-branches/day_5_Fri.png)
 
-Package versions pinned; R analysis reviewed and merged (PR #2)
-
----
-<!-- _class: workflow-full -->
-<!-- _header: '' -->
-<!-- _footer: '' -->
-# One week workflow example
-
-![](git-toy-workflow-branches/day_6_Mon.png)
-
-After the weekend: reproducibility docs merged (PR #3)
-
----
-<!-- _class: workflow-full -->
-<!-- _header: '' -->
-<!-- _footer: '' -->
-# One week workflow example
-
-![](git-toy-workflow-branches/day_7_Tue.png)
-
-Release branch tagged v1.0, with a CITATION.cff so others can cite it
+README notes merged (PR #3); main tagged v1.0 so others can cite this exact version
 
 ---
 <!-- _header: '' -->
