@@ -243,6 +243,22 @@ You open your project folder. **Which script was the one you used?**
 <p class="comparison-caption">Which version did you use for the analysis you sent your supervisor?</p>
 
 ---
+# Keeping track of a research project
+
+A research project changes as you revise the analysis and respond to feedback.
+
+Git helps you:
+
+- Record **what changed and why**
+- Return to an earlier version of your files
+- Combine changes from collaborators
+- Maintain control of AI-generated code/text
+
+You keep working in the same files. **Git records the versions you choose to save.**
+
+<!-- To reconstruct a result, also record the data version and software environment. Git records the files you commit. The history in the previous slide appears in Git tools, not as files in the project folder. -->
+
+---
 <!-- _class: revision-files -->
 # Finding the script you sent last month
 
@@ -277,24 +293,6 @@ You open your project folder. **Which script was the one you used?**
 </div>
 </div>
 </div>
-
-<p class="comparison-caption">Which version did you use for the analysis you sent your supervisor?</p>
-
----
-# Keeping track of a research project
-
-A research project changes as you revise the analysis and respond to feedback.
-
-Git helps you:
-
-- Record **what changed and why**
-- Return to an earlier version of your files
-- Combine changes from collaborators
-- Maintain control of AI-generated code/text
-
-You keep working in the same files. **Git records the versions you choose to save.**
-
-<!-- To reconstruct a result, also record the data version and software environment. Git records the files you commit. The history in the previous slide appears in Git tools, not as files in the project folder. -->
 
 ---
 <!-- _header: '' -->
