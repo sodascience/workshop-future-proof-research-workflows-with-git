@@ -71,6 +71,13 @@ style: |
   section.fellowship .fellowship-deadline { margin-top: 20px; padding: 24px 18px; background: #006889; color: #ffffff; text-align: center; font-size: 27px; line-height: 1.3; }
   section.fellowship .fellowship-deadline strong { color: #ffffff; font-size: 32px; }
 
+  section.revision-files .file-comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 54px; }
+  section.revision-files h2 { margin: 0 0 14px; font-size: 31px; }
+  section.revision-files pre { margin: 0; font-size: 23px; line-height: 1.3; background: none; padding: 0; }
+  section.revision-files .saved-history { margin-top: 16px; font-size: 23px; line-height: 1.35; }
+  section.revision-files .saved-history p { margin: 0 0 6px; }
+  section.revision-files .comparison-caption { margin-top: 26px; font-size: 25px; }
+
   section .qr-center { display: flex; justify-content: center; width: 100%; }
   section .qr-center img { width: 300px; height: auto; }
   section.mission { text-align: center; }
@@ -192,19 +199,102 @@ Next application deadline:<br>
 
 
 ---
-# Familiar research project problems
+# “Can you send me the previous version?”
 
-`analysis_final.R` → `analysis_final_v2.R` → `analysis_final_REALLY_FINAL.R`
+Last month, you sent your supervisor some analysis results.
 
-Or:
+Since then, you’ve excluded some respondents and changed some variables.
 
-- Two collaborators edit the same file and exchange copies by email.
-- A result changes, but nobody remembers *which code changed*.
-- AI assistants produce changes, but you cannot see what changed (over time).
+Your supervisor asks:
+> **“Could we go back to the original model and compare the results?”**
 
 <br>
+You open your project folder. **Which script was the one you used?**
 
-> **Git helps you make changes visible, trackable and reversible.**
+---
+<!-- _class: revision-files -->
+# Finding the script you sent last month
+
+<div class="file-comparison">
+<div>
+<h2>Bad</h2>
+<pre>research-project/
+  data/
+  results/
+  README.md
+  analysis.R</pre>
+</div>
+<div>
+<h2>Better?</h2>
+<pre>research-project/
+  data/
+  results/
+  README.md
+  analysis.R
+  analysis_final.R
+  analysis_final_v2.R
+  analysis_Lisa.R
+  analysis_new.R
+  analysis_revised.R
+  older_versions/</pre>
+</div>
+</div>
+
+<p class="comparison-caption">Which version did you use for the analysis you sent your supervisor?</p>
+
+---
+<!-- _class: revision-files -->
+# Finding the script you sent last month
+
+<div class="file-comparison">
+<div>
+<h2>Without version control</h2>
+<pre>research-project/
+  data/
+  results/
+  README.md
+  analysis.R
+  analysis_final.R
+  analysis_final_v2.R
+  analysis_Lisa.R
+  analysis_new.R
+  analysis_revised.R
+  older_versions/</pre>
+</div>
+<div>
+<h2>With Git</h2>
+<pre>research-project/
+  data/
+  results/
+  README.md
+  analysis.R</pre>
+<div class="saved-history">
+<p><strong>History recorded in Git for analysis.R</strong></p>
+<p>Nov. 3: “Restrict sample to employed respondents”</p>
+<p>Nov. 2: “Add education as a control”</p>
+<p>Nov. 1: “Remove outliers”</p>
+<p>Oct. 10: “Add regression model”</p>
+</div>
+</div>
+</div>
+
+<p class="comparison-caption">Which version did you use for the analysis you sent your supervisor?</p>
+
+---
+# Keeping track of a research project
+
+A research project changes as you revise the analysis and respond to feedback.
+
+Git helps you:
+
+- Record **what changed and why**
+- Return to an earlier version of your files
+- Combine changes from collaborators
+- Maintain control of AI-generated code/text
+
+You keep working in the same files. **Git records the versions you choose to save.**
+
+<!-- To reconstruct a result, also record the data version and software environment. Git records the files you commit. The history in the previous slide appears in Git tools, not as files in the project folder. -->
 
 ---
 <!-- _header: '' -->
