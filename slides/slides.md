@@ -523,7 +523,7 @@ Dot-prefixed names may be hidden in your file manager.
 
 1. Open `README.md` in a **plain-text editor**.
 2. Add `## Research question` and one research question like:
-> What factors influence the number of citations a research publication receives?
+> "What factors are associated with the number of citations a publication receives?"
 3. Create a new file `docs/methods.md`; save.
 4. Return to GitHub Desktop → **Changes**.
 5. Select README; inspect the diff and describe the change.
@@ -563,7 +563,7 @@ Dot-prefixed names may be hidden in your file manager.
 
 | Plain text | Binary formats |
 |:--|:--|
-| `.md`, `.R`, `.py`, `.csv`, `.tex` | `.docx`, `.xlsx`, `.pdf`, images |
+| `.md`, `.R`, `.py`, `.csv`, `.tex` | `.zip`, `.docx`, `.xlsx`, `.pdf`, images |
 | Git can show changes line by line | Usually no useful line-by-line diff |
 | Easier to review and merge | Often need the original application |
 
@@ -597,7 +597,7 @@ Git can store both. **Readable diffs make collaboration easier.**
 A text file that tells git which files/folders to ignore.
 
 ---
-# Thou shall not commit these files
+# .gitignore: "Thou shall not commit these files"
 
 1. In your cloned folder, create `.gitignore`.
 
@@ -610,6 +610,8 @@ A text file that tells git which files/folders to ignore.
 .DS_Store
 ```
 
+3. Commit the new `.gitignore` file.
+
 ---
 <!-- _header: '' -->
 <!-- _footer: '' -->
@@ -619,7 +621,7 @@ A text file that tells git which files/folders to ignore.
 
 ---
 <!-- _class: exercise -->
-# Exercise 4 · Publish (5 min)
+# Exercise 4 · Push (5 min)
 
 1. In GitHub Desktop, click **Push origin**.
 2. Open the repository on GitHub.com.
@@ -689,7 +691,7 @@ A text file that tells git which files/folders to ignore.
      - Gone is gone
      - Discard selected changes only if you truly don't need them.
 - **Revert previously committed change:** 
-     - Use **History → Revert Changes in Commit** to make a new commit that reverses it.
+     - Use **History → Revert Changes in Commit** (in GitHub Desktop) to make a new commit that reverses it.
 
 ---
 
@@ -733,7 +735,9 @@ A text file that tells git which files/folders to ignore.
 A **branch** is a separate line of changes in the *same* repository.
 
 - `main` = the shared, stable line.
-- `docs/add-reproducibility-note` = work in progress.
+- `docs/reproducibility-note` = work in progress.
+> "docs/" is a common prefix for documentation-related branches.
+> other prefixes: `analysis/`, `methods/`, `feature/`, `bugfix/`, etc.
 - Changes can be reviewed **before** being merged into `main`.
 
 ```text
@@ -825,14 +829,14 @@ README notes merged (PR #3); main tagged v1.0 so others can cite this exact vers
 # Exercise 6 · Work on a branch (10 min)
 
 1. In GitHub Desktop, select `main`.
-2. Create `docs/reproducibility-note`.
-3. Open `docs/methods.md` and add one sentence about documentation.
-> The project uses the SoDa SORTD datasets.
-4. Review the diff and **commit**.
-5. Click **Publish branch**.
-6. On GitHub, verify both branches exist.
-
-<br>
+2. Create a new branch and name it `docs/reproducibility-note`.
+3. Open the file `docs/methods.md`
+> "docs/" here refers to the folder, not the branch name prefix.
+4. Addone sentence about documentation:
+> "The project uses the SoDa SORTD datasets."
+5. Review the diff and **commit**.
+6. Click **Publish branch**.
+7. On GitHub, verify both branches exist.
 
 ---
 <!-- _class: checkpoint -->
@@ -864,7 +868,7 @@ Does `main` contain your branch’s new sentence yet?
 ---
 # Two GitHub collaboration tools
 
-**Issue = work to be done**
+**Issue = work to be done**, similar to a to-do list item.
 
 > “Document which observations are excluded from the analysis.”
 
@@ -1102,7 +1106,8 @@ You now know the essentials of this workflow.
 
 If an AI assistant makes any change to your file(s), you should:
 
-- **Make a plan**: what is the intended change?
+- **Limit the scope** of the change to a single, coherent purpose.
+- **Make a plan**: how to implement the intended change?
 - **Branch first** so the proposal is isolated.
 - **Review the diff**: which files and lines changed?
 - **Test / inspect outputs** before accepting the result.
